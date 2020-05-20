@@ -1,13 +1,14 @@
 ##Personal site 
 this design make you build your porfisonal site
 
-config 
-1-first go to .env file and edit the name datbase and user and password 
-2-second run php artisan migrate 
-3-third run php artisan serve
-4-fourth go to http://127.0.0.1:8000/registir and create your admin account 
-5-go to http://127.0.0.1:8000/admin/home and login in the admin panel 
-6-enjoy
+<p> config <br/>
+1-first go to .env file and edit the name datbase and user and password <br/>
+2-second run php artisan migrate <br/>
+3-third run php artisan serve <br/>
+4-fourth go to http://127.0.0.1:8000/registir and create your admin account <br/>
+5-go to http://127.0.0.1:8000/admin/home and login in the admin panel <br/>
+6-enjoy<br/>
+ </p>   
 this is erd database design
 <p align="center"><img src="database.png" width="400"></p>
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
