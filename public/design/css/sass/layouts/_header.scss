@@ -1,0 +1,92 @@
+@import "../helpers/mixins";
+@import "../helpers/varibles";
+header {
+  background-image: url(../img/header_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  // media query
+  @media #{$maxMobile} {
+    height: 750px;
+  }
+  .overlay {
+    @include overlay;
+    background-color: rgba(0,0,0, 0.7);
+    .navbar {
+      background-color: $mainColor !important;
+      font-size: 20px !important;
+      padding: 16px;
+      border-bottom: 3px solid $secondColor;
+      .navbar-brand {
+        font-size: 24px !important;
+        color: $secondColor !important;
+      }
+      li {
+        a {
+          color: #fff !important;
+          &:hover {
+            color: $secondColor !important;
+          }
+        }
+      }
+    }
+    h1{
+      margin-bottom: 10px;
+      color: #fff !important;
+    }
+    .about {
+      color: #fff;
+      .img-about {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 130px auto 10px;
+        padding: 2px ;
+        border: 1px solid $secondColor;
+        @include prefixer(transition, all 0.9s ease-in-out, o moz webkit);
+        &:hover{
+        @include prefixer(transform, scale(1.2), o moz webkit);
+        }
+      }
+      p {
+        font-size: 20x;
+      }
+      .btn {
+        @include button;
+        background-color: transparent;
+        color: $mainColor;
+        margin: 15px auto 40px;
+        border-color: $mainColor;
+        &:hover {
+          background-color: #fff;
+          color: $mainColor;
+        }
+      }
+      .chev {
+        .fa-chevron-down {
+          font-size: 26px !important;
+          color: $mainColor;
+          margin: 0;
+          padding: 0;
+        }
+        @include prefixer(
+          animation,
+          slideInDown 1s infinite 2s both,
+          moz o webkit
+        );
+        // include mixin for animation
+        @include keyFrame(slideInDown) {
+          0% {
+            transform: translateY(-100%);
+            visibility: visible;
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}

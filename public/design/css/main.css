@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amiri", serif !important;
+  font-size: 1.2em !important;
+}
+
+.glope_head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 65px auto;
+  color: #fff;
+  padding: 25px;
+  font-weight: 500;
+  background-color: #3ac83e;
+}
+
+header {
+  background-image: url(../img/header_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  header {
+    height: 750px;
+  }
+}
+header .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header .overlay .navbar {
+  background-color: #3ac83e !important;
+  font-size: 20px !important;
+  padding: 16px;
+  border-bottom: 3px solid #3f69c9;
+}
+header .overlay .navbar .navbar-brand {
+  font-size: 24px !important;
+  color: #3f69c9 !important;
+}
+header .overlay .navbar li a {
+  color: #fff !important;
+}
+header .overlay .navbar li a:hover {
+  color: #3f69c9 !important;
+}
+header .overlay h1 {
+  margin-bottom: 10px;
+  color: #fff !important;
+}
+header .overlay .about {
+  color: #fff;
+}
+header .overlay .about .img-about {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 130px auto 10px;
+  padding: 2px;
+  border: 1px solid #3f69c9;
+  -o-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+header .overlay .about .img-about:hover {
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+header .overlay .about p {
+  font-size: 20x;
+}
+header .overlay .about .btn {
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #3ac83e;
+  margin: 15px auto 40px;
+  border-color: #3ac83e;
+}
+header .overlay .about .btn:hover {
+  background-color: #fff;
+  color: #3ac83e;
+}
+header .overlay .about .chev {
+  -moz-animation: slideInDown 1s infinite 2s both;
+  -o-animation: slideInDown 1s infinite 2s both;
+  -webkit-animation: slideInDown 1s infinite 2s both;
+  animation: slideInDown 1s infinite 2s both;
+}
+header .overlay .about .chev .fa-chevron-down {
+  font-size: 26px !important;
+  color: #3ac83e;
+  margin: 0;
+  padding: 0;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* portfolio */
+.portfolio .show img {
+  max-width: 100%;
+  overflow: hidden;
+}
+.portfolio .show .btn {
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #3ac83e;
+  margin: 15px auto 40px;
+  border-color: #3ac83e;
+}
+.portfolio .show .btn:hover {
+  background-color: #3ac83e;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .portfolio .desc {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio .desc {
+    text-align: none;
+    float: right;
+  }
+}
+.portfolio .desc h3 {
+  margin-top: 20px;
+  color: #3f69c9;
+}
+
+/* skills */
+.skills .key_skills {
+  border: 1px solid #3f69c9;
+  padding: 10px;
+  margin: 40px auto;
+  -moz-box-shadow: 1px 2px 7px;
+  -webkit-box-shadow: 1px 2px 7px;
+  -o-box-shadow: 1px 2px 7px;
+  box-shadow: 1px 2px 7px;
+}
+@media (max-width: 767px) {
+  .skills .key_skills {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .skills .key_skills {
+    text-align: none;
+  }
+}
+.skills .key_skills h2 {
+  margin: 10px;
+  padding: 15px;
+  color: #3f69c9;
+}
+.skills .key_skills .desc {
+  padding: 15px;
+}
+.skills .key_skills .desc img {
+  height: 65px;
+  width: 65px;
+  -o-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+.skills .key_skills .desc img:hover {
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* skills */
+.sk_distr .avg_h2 {
+  font-weight: 500;
+  color: #3f69c9;
+}
+.sk_distr .bar label {
+  text-transform: capitalize;
+  color: #3f69c9;
+  padding-top: 5px;
+}
+.sk_distr .bar .progress .progress-bar {
+  background-color: #3ac83e;
+  transition: width 5s ease;
+}
+
+/* contact */
+.contact {
+  color: #3f69c9;
+}
+.contact form {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact form .btn {
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #3ac83e;
+  margin: 15px auto 40px;
+  border-color: #3ac83e;
+}
+.contact form .btn:hover {
+  background-color: #3ac83e;
+  color: #fff;
+}
+
+.arrow-scroll {
+  background-color: #3f69c9;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 162px;
+  right: 18px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+.arrow-scroll .fa-chevron-up {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  background-color: #3ac83e;
+  padding: 18px;
+  margin-top: 50px;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+footer .ico {
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+}
+footer .ico a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+footer .ico a:hover {
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #3f69c9;
+}
+
+/*# sourceMappingURL=main.css.map */

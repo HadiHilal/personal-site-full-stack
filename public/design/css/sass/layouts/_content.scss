@@ -1,0 +1,124 @@
+@import "../helpers/mixins";
+@import "../helpers/varibles";
+
+/* portfolio */
+.portfolio {
+  .show {
+    img {
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .btn {
+      @include button;
+      background-color: transparent;
+      color: $mainColor;
+      margin: 15px auto 40px;
+      border-color: $mainColor;
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+  .desc {
+    // media query
+    @media #{$maxMobile} {
+      text-align: center;
+    }
+    @media #{$minSmall } {
+      text-align: none;
+      float: $float-right;
+    }
+    h3 {
+      margin-top: 20px;
+      color: $secondColor;
+    }
+  }
+}
+/* skills */
+.skills {
+  .key_skills {
+    border: 1px solid $secondColor;
+    padding: 10px;
+    margin: 40px auto;
+    @include prefixer(box-shadow, 1px 2px 7px, moz webkit o);
+    @media #{$maxMobile} {
+      text-align: center;
+    }
+    @media #{$minSmall } {
+      text-align: none;
+    }
+    h2 {
+      margin: 10px;
+      padding: 15px;
+      color: $secondColor;
+    }
+    .desc {
+      padding: 15px;
+      img {
+        height: 65px;
+        width: 65px;
+        @include prefixer(transition, all 0.9s ease-in-out, o moz webkit);
+        &:hover {
+          @include prefixer(transform, scale(1.2), o moz webkit);
+        }
+      }
+    }
+  }
+}
+
+/* skills */
+.sk_distr {
+  .avg_h2 {
+    font-weight: 500;
+    color: $secondColor;
+  }
+  .bar {
+    label {
+      text-transform: capitalize;
+      color: $secondColor;
+      padding-top: 5px;
+    }
+    .progress {
+      .progress-bar {
+        background-color: $mainColor;
+        transition: width 5s ease;
+      }
+    }
+  }
+}
+/* contact */
+.contact {
+  color: $secondColor;
+  form {
+    width: 80%;
+    margin: 0 auto;
+    .btn {
+      @include button;
+      background-color: transparent;
+      color: $mainColor;
+      margin: 15px auto 40px;
+      border-color: $mainColor;
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+}
+.arrow-scroll{
+  background-color: $secondColor;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 162px;
+  right: 18px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  .fa-chevron-up{
+    font-size: 34px;
+    font-weight: bold;
+  }
+}

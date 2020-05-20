@@ -1,0 +1,26 @@
+@import "../helpers/mixins";
+@import "../helpers/varibles";
+
+.content{
+    margin-left: 30px;
+    padding: 18px 8px;
+    h2{
+        color: $secondColor;
+        margin: 25px 1px;
+    }
+    @media #{$maxMobile}  {
+        width:60%;
+        float: $float-right;
+        padding: 12px 16px;
+        margin-left: 60px;
+    }
+    .settings{
+        label{
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}

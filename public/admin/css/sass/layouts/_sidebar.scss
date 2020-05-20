@@ -1,0 +1,58 @@
+@import '../helpers/varibles';
+@import '../helpers/mixins';
+
+/* sidebar */
+.sidebar{ 
+    background-color: $mainColor;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    width: 21%;
+    font-size: 24px;
+    @media #{$maxMobile}  {
+        width: 38%;
+    }
+    .logo{
+        color: $secondColor;
+        text-transform: capitalize;
+        margin: 25px auto;
+        cursor: pointer;
+    }
+    hr{
+        margin-bottom: 0px !important;
+    }
+    .admin_desc{
+        margin-top: 15px;
+        img{
+            width: 100%;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            cursor: pointer;
+            border-bottom: 1px solid $secondColor;
+            padding: 14px;
+            @include prefixer(transition , all .5s ease-in-out , moz o webkit);
+            .active{
+                background-color: rgba(0,0,0 , .5);
+            }
+            &:hover{
+                background-color: rgba(0,0,0 , .5);
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .dropdown-side{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../helpers/varibles';
+@import '../helpers/mixins';
+
+/* navbar */
+
+.nav{
+    padding: 20px !important;
+    border-bottom: 1px solid $mainColor;
+    background-color: #fff !important;
+    @media #{$maxMobile}  {
+        width:60%;
+        float: $float-right;
+    }
+    .sidebar-btn{
+        position: relative;
+        bottom: -10px;
+        right: 15px;
+        cursor: pointer;
+        color: $secondColor;
+       
+    }
+}

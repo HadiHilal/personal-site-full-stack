@@ -1,0 +1,30 @@
+@import "../helpers/mixins";
+@import "../helpers/varibles";
+
+/* footer */
+footer {
+  background-color: $mainColor;
+  padding: 18px;
+  margin-top: 50px;
+  p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  .ico {
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    a {
+      font-size: 30px;
+      text-decoration: none;
+      color: #fff;
+      @include prefixer(transition, all 0.5s ease-in-out, o moz webkit);
+      &:hover {
+        @include prefixer(transform, scale(1.2), o moz webkit);
+        color: $secondColor;
+      }
+    }
+  }
+}

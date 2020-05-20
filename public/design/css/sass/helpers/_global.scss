@@ -1,0 +1,11 @@
+@import '../helpers/mixins';
+*{
+    padding: 0;
+    margin: 0;
+    @include prefixer(box-sizing , border-box , moz o webkit);
+}
+body{
+    font-family: 'Amiri', serif !important;
+    font-size: 1.2em !important;
+}
+

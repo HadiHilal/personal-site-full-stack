@@ -1,0 +1,8 @@
+@import "../helpers/mixins";
+@import "../helpers/varibles";
+
+footer{
+    background-color: $secondColor;
+    color: #fff;
+    padding: 14px;
+}
