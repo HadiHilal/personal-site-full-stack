@@ -1,8 +1,8 @@
-##Personal site 
+## Personal site 
 this design make you build your porfisonal site
 
-<p> config <br/>
-1-first go to .env file and edit the name datbase and user and password <br/>
+# config <br/>
+<p> 1-first go to .env file and edit the name datbase and user and password <br/>
 2-second run php artisan migrate <br/>
 3-third run php artisan serve <br/>
 4-fourth go to http://127.0.0.1:8000/registir and create your admin account <br/>
